@@ -16,6 +16,11 @@ public class ImportantTweet extends Tweet {
     }
 
     @Override
+    public String getMessage() {
+        return "hi";
+    }
+
+    @Override
     public boolean  isImportant(){
         return true;
     }

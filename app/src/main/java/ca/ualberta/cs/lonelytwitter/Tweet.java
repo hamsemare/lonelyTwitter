@@ -7,9 +7,10 @@ import java.util.Date;
  */
 
 
-public abstract class Tweet {
+public abstract class Tweet  implements  Tweetable{
     private String message;
     private Date date;
+
     Tweet(){
 
     }
@@ -35,11 +36,13 @@ public abstract class Tweet {
 
     public void setMessage(String newMessage){
         if (newMessage.length()>160){
-           throw new TweetTooLongException();
+           throws new TweetTooLongException();
         }
         this.message=newMessage;
 
     }
+
+
 
     public void setDate(Date newDate){
         this.date=newDate;

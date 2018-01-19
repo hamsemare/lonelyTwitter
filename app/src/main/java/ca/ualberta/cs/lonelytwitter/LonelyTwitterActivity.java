@@ -58,6 +58,14 @@ public class LonelyTwitterActivity extends Activity {
 				alltweets[1].isImportant();
 
 
+				//Created the list of moods
+				currentmood mood1=new happy(new Date());
+				currentmood mood2=new sad(new Date());
+				ArrayList<currentmood> moods= new ArrayList<currentmood>();
+				moods.add(mood1);
+				moods.add(mood2);
+
+
 
 
 				try{
