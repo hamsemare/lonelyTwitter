@@ -34,12 +34,18 @@ public abstract class Tweet  implements  Tweetable{
         return date;
     }
 
-    public void setMessage(String newMessage){
+    public void setMessage(String newMessage) throws TweetTooLongException{
         if (newMessage.length()>160){
-           throws new TweetTooLongException();
+        }
+        else{
+            throw new TweetTooLongException();
         }
         this.message=newMessage;
 
+    }
+
+    public String toString(){
+        return message;
     }
 
 
@@ -49,6 +55,6 @@ public abstract class Tweet  implements  Tweetable{
     }
 
 
-    public boolean abstract isImportant();
+    public abstract boolean  isImportant();
 
 }
