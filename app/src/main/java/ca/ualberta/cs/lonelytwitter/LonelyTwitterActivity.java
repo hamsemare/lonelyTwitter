@@ -124,7 +124,7 @@ public class LonelyTwitterActivity extends Activity {
     }
 
     public void clear(View view){
-        //tweetlist.removeAll(tweetlist);
+        tweetlist.removeAll(tweetlist);
         oldTweetsList.onRemoteAdapterDisconnected();
         oldTweetsList.removeAllViewsInLayout();
         deleteFile(FILENAME);
