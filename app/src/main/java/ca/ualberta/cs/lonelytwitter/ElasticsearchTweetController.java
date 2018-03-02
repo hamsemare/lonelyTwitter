@@ -20,6 +20,7 @@ import io.searchbox.core.SearchResult;
 /**
  * Created by romansky on 10/20/16.
  */
+
 public class ElasticsearchTweetController {
     private static JestDroidClient client;
 

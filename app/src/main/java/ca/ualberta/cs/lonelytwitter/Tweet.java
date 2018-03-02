@@ -57,4 +57,5 @@ public abstract class Tweet implements Tweetable{
     public void setId(String id) {
         this.id = id;
     }
+
 }

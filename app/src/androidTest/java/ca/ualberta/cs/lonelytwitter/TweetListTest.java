@@ -1,6 +1,9 @@
 package ca.ualberta.cs.lonelytwitter;
 
+import android.app.Activity;
 import android.test.ActivityInstrumentationTestCase2;
+
+import com.robotium.solo.Solo;
 
 import java.util.Arrays;
 
@@ -8,10 +11,15 @@ import java.util.Arrays;
  * Created by Hamsemare on 2018-02-14.
  */
 
+
+
 public class TweetListTest extends ActivityInstrumentationTestCase2 {
+
+
     public TweetListTest() {
         super(LonelyTwitterActivity.class);
     }
+
 
 
     //Test should throw an IllegalArgumentException when one tries to add a duplicate tweet
